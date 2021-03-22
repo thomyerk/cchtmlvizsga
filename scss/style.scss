@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Open Sans, sans-serif;
+}
+
+h4 {
+	color: #ffd310;
+}
+
+h1 {
+	color: white;
+	margin: auto;
+	letter-spacing: 0.2rem;
+}
+
+body {
+	font-family: Open Sans, sans-serif;
+	padding: 3rem;
+	background-color: #29a85a !important;
+}
+body h1 {
+	font-size: 4rem;
+	letter-spacing: 0.4rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	font-weight: 100;
+}
+
+nav {
+	position: absolute;
+	top: 3vh;
+	right: 3vw;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.burger {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2rem 1.7rem;
+	gap: 0.5rem;
+}
+.burger span {
+	width: 3rem;
+	height: 0.5rem;
+	background-color: white;
+}
+
+.one h5 {
+	color: #ffd310;
+	max-width: 30%;
+	line-height: 3rem;
+}
+.one section {
+	color: white;
+	background: black;
+	min-height: 90%;
+	padding: 2rem;
+}
+
+.two h5 {
+	color: #ffd310;
+	max-width: 30%;
+	line-height: 3rem;
+}
+.two section {
+	color: black;
+	background: white;
+	min-height: 90%;
+	padding: 2rem;
+}
+
+.three {
+	position: relative;
+}
+.three img {
+	position: absolute;
+	max-width: 40%;
+	transform: translate(-50%, -50%);
+	top: 40%;
+	left: 50%;
+	filter: invert(1);
+}
+.three h5 {
+	color: #ffd310;
+	max-width: 30%;
+	line-height: 3rem;
+}
+.three section {
+	color: white;
+	background: black;
+	padding: 2rem;
+
+	min-height: 90%;
+}
+
+.col {
+	min-width: 25%;
+	min-height: 90%;
+	line-height: 2rem;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 3rem;
+	gap: 4rem;
+	min-height: 70vh;
+}
+.container a {
+	font-size: 1rem;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffd310;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		padding: 2rem;
+	}
+	section {
+		line-height: 1.5rem;
+		font-size: 0.8rem;
+	}
+	.col h5 {
+		line-height: 2rem;
+
+		font-size: 1rem;
+	}
+
+	body h1 {
+		font-size: 0.8rem;
+		text-align: left;
+		margin-bottom: 3rem;
+		font-weight: 100;
+
+		letter-spacing: 0.3rem;
+	}
+
+	.container {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.three section {
+		min-height: 50vh !important;
+	}
+
+	.burger {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 1rem 1rem;
+		gap: 0.3rem;
+	}
+	.burger span {
+		width: 1.5rem;
+		height: 0.2rem;
+		background-color: white;
+	}
+}
